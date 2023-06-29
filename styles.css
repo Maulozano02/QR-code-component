@@ -1,0 +1,77 @@
+ :root{
+   /* Colors  */
+  --white: hsl(0, 0%, 100%);
+  --lightGray: hsl(212, 45%, 89%);
+  --grayishBlue: hsl(220, 15%, 55%);
+  --darkBlue: hsl(218, 44%, 22%);
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-size: 62.5%;
+  font-family: 'Outfit', sans-serif;
+  scroll-behavior : smooth;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: var(--lightGray);
+}
+
+.container {
+  position: relative;
+  width: 250px;
+  height: 400px;
+  margin: 0 auto; /* Center the container horizontally */
+  border-radius: 10px;
+  margin-top: 30%;
+  background-color: var(--white);
+}
+
+.qrCode{
+  display: flex;
+  justify-content: center;
+}
+
+img{
+  width: 200px; 
+  height: 200px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+p{
+  margin-top: 10px;
+  text-align: center;
+}
+
+.paragrapgh1{
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.paragrapgh2{
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: var(--grayishBlue);
+}
+.attribution {
+  font-size: 1.1rem;
+  text-align: center;
+  color: hsl(228, 45%, 44%);
+  margin: 20px 10px 0 10px;
+  text-align: center; /* Center the attribution text */
+}
+
+ @media (min-width: 1000px) { 
+  .container {
+    margin-top: 20%;
+  }
+} 
