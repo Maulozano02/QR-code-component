@@ -1,3 +1,9 @@
 .container{
+  position: relative;
+  width: 250px;
+  height: 400px;
+  margin: 0 auto; /* Center the container horizontally */
+  border-radius: 10px;
   margin-top: 15%;
+  background-color: var(--white);
 }
